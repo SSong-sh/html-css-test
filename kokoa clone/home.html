@@ -7,23 +7,24 @@
         height: 1000vh;
         margin: 50px;
       }
-      span {
-        color: tomato;
+      input {
+        border: 1px solid wheat;
       }
-      p span {
-        color: teal;
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
   <body>
     <div>
-      <span>hello</span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. <span>inside</span>
-      </p>
+      <form>
+        <input type="text" placeholder="first name" />
+        <input type="text" placeholder="last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
