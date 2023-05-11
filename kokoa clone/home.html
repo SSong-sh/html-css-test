@@ -3,26 +3,22 @@
   <head>
     <title>Home - my first web site</title>
     <style>
-      body {
-        height: 1000vh;
-        margin: 50px;
+      a {
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: background-color 10s ease-in-out, color 5s ease-in-out;
       }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:hover input:focus {
-        background-color: orange;
+      a:hover {
+        color: red;
+        background-color: wheat;
       }
     </style>
   </head>
   <body>
-    <form>
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-    </form>
+    <a href="#">GO home</a>
   </body>
 </html>
