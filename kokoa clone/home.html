@@ -3,14 +3,20 @@
   <head>
     <title>Home - my first web site</title>
     <style>
+      @keyframes awesomeCoinFlip {
+        from {
+          transform: rotateZ(0);
+        }
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
       img {
-        border: 1px solid black;
+        border: 1px solid palegreen;
         border-radius: 50%;
-        transition: transform 2s ease-in-out;
+        animation: awesomeCoinFlip 5s ease-in-out infinite;
       }
-      img:hover {
-        transform: matrix(1,2,3,4,5,6);
-      }
+ 
     </style>
   </head>
   <body>
